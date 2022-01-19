@@ -6,7 +6,7 @@ const Ships = () => {
     useEffect(()=>{
         fetch('https://api.spacexdata.com/v3/launches/')
             .then(value => value.json())
-            .then(value => setShips(value))
+            .then(value => setShips(value.filter(value => value.launch_year !== '2006')))
 
 
 
