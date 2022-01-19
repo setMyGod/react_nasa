@@ -1,12 +1,10 @@
 import React from 'react';
-import './App.css';
 
-import Ships from "./Ships/Ships";
+import './App.css';
 
 const App = () => {
     return (
         <div>
-            <Ships/>
 
         </div>
     );
