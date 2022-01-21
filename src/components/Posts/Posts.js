@@ -1,4 +1,5 @@
 
+
 const Posts = ({posts}) => {
     return (
         <div>
