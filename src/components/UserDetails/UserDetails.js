@@ -6,7 +6,7 @@ const UserDetails = ({user,getUserId}) => {
             <div>{name}</div>
             <div>{username}</div>
             <div>{email}</div>
-            <button onClick={()=>getUserId(id)}>Posts</button>
+            <button onClick={()=>getUserId(id)}>Все посты</button>
 
         </div>
     );

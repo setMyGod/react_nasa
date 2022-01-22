@@ -8,6 +8,8 @@ import css from './App.module.css';
 import {postService} from "./config/services/post.service";
 
 
+
+
 const App = () => {
     const [user, setUser] = useState(null);
     const [userId, setUserId] = useState(null);
@@ -15,6 +17,7 @@ const App = () => {
 
     const getUser = (user) => {
         setUser(user)
+        setPosts([])
     }
     const getUserId = (id) => {
         postService.getByUserID(id).then(value => setPosts([...value]))
@@ -26,7 +29,7 @@ const App = () => {
                 <Users getUser={getUser}/>
                 {user && <UserDetails user={user} getUserId={getUserId} />}
             </div>
-            {!!posts.length && <Posts posts={posts}/>}
+            <div className={'postwrap'}>{!!posts.length && <Posts posts={posts}/>}</div>
 
         </div>
     );
