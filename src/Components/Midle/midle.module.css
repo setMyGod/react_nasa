@@ -1,0 +1,33 @@
+
+
+.wrap{
+    box-sizing: border-box;
+    background: whitesmoke;
+    width:1350px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.paragraphs {
+    display: flex;
+    gap: 20px;
+}
+.block{
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 5px 1px 5px 5px black;
+    border-radius: 20px;
+    width: 200px;
+}
+
+h1{
+    margin-top: -150px;
+}

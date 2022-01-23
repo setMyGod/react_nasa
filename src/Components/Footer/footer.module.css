@@ -1,0 +1,35 @@
+.down{
+
+    display: flex;
+    width: 1350px;
+    box-sizing: border-box;
+    gap: 10px;
+    background: black;
+    color: snow;
+
+
+}
+.image {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+}
+.wrapimg{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+.years{
+
+    font-size: 14px;
+    width: 200px;
+    margin-left: 50px;
+    letter-spacing: 1px;
+}
+.midleimages {
+    justify-content: space-between;
+    display: flex;
+}
