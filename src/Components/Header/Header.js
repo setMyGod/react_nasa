@@ -1,16 +1,30 @@
-import React, {createRef} from 'react';
+import React, {createRef, useState} from 'react';
 
 import head from './header.module.css'
 
 const Header = () => {
-    const login = createRef();
-    const password = createRef();
+    let [login, setLogin] = useState('');
+    let [password, setPassword] = useState('');
 
     function onSubmit (e){
         e.preventDefault()
-        console.log(login.current.value);
+        console.log(e.target.login.value);
+        console.log(e.target.password.value);
 
     }
+
+    function onLoginChange (e){
+        setLogin(e.target.value)
+
+
+    }
+
+    function onPasswordChange (e){
+        setPassword(e.target.value)
+
+    }
+
+
 
     return (
         <div className={head.wrap}>
@@ -18,8 +32,8 @@ const Header = () => {
             <a href={'#'}>Курсы</a>
             <a href={'#'}>Отзывы</a>
             <form className={head.form} onSubmit={onSubmit}>
-                <input className={head.input} type="text" name={'login'} ref={login} placeholder={'Login'}/>
-                <input className={head.input} type="text" name={'password'} ref={password} placeholder={'Password'}/>
+                <input className={head.input} type="text" name={'login'} placeholder={'Login'} value={login} onChange={onLoginChange}/>
+                <input className={head.input} type="text" name={'password'} placeholder={'Password'} value={password}onChange={onPasswordChange}/>
                 <button>Войти</button>
             </form>
 
