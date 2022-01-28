@@ -1,0 +1,19 @@
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    flex-direction: column;
+    padding: 5px;
+    border: 2px solid antiquewhite;
+    margin-top: 10px;
+    background: snow;
+
+}
+.wrap:hover{
+    background: silver;
+}
+
+
